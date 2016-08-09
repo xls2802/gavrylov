@@ -7,9 +7,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
     public class JavaTestClassNegative extends JavaTestClass{
+        String driver_path = "./lib/chromedriver.exe";
+
         @Test
         public void loginNegative () throws InterruptedException {
-            System.setProperty("webdriver.chrome.driver", "C://Users//Администратор//IdeaProjects//TestGavr//lib//chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", driver_path);
             WebDriver driver = new ChromeDriver();
 
             driver.get("http://flibusta.is" + "/");
@@ -34,7 +36,7 @@ import org.testng.annotations.Test;
         @Test
         public void searchNegative ()
         {
-            System.setProperty("webdriver.chrome.driver", "C://Users//Администратор//IdeaProjects//TestGavr//lib//chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", driver_path);
             WebDriver driver = new ChromeDriver();
 
             login();

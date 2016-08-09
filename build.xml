@@ -38,7 +38,7 @@
 <target name="testng-execution" depends="compile">
 <mkdir dir="${testng-report-dir}" />
 <testng outputdir="${testng-report-dir}" classpathref="classpath" useDefaultListeners="true">
-    <xmlfileset dir="${basedir}" includes="./suits/suite_positive.xml" /> <!-- includes меняем на название файла сьюита-->
+    <xmlfileset dir="${basedir}" includes="suite_positive.xml" /> <!-- includes меняем на название файла сьюита-->
 </testng>
 </target>
         </project>

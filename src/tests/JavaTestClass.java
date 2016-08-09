@@ -7,11 +7,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class JavaTestClass {
-
+String driver_path = "./lib/chromedriver.exe";
 
     public void login ()
     {
-        System.setProperty("webdriver.chrome.driver", "C://Users//Администратор//IdeaProjects//TestGavr//lib//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
 
         WebDriver driver = new ChromeDriver();
 
@@ -38,7 +38,7 @@ public class JavaTestClass {
     @Test
     public void logout ()
     {
-        System.setProperty("webdriver.chrome.driver", "C://Users//Администратор//IdeaProjects//TestGavr//lib//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
 
         driver.get("http://flibusta.is" + "/");
@@ -61,7 +61,7 @@ public class JavaTestClass {
     @Test
     public void searchBy_A ()
     {
-        System.setProperty("webdriver.chrome.driver", "C://Users//Администратор//IdeaProjects//TestGavr//lib//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
 
         driver.get("http://flibusta.is" + "/node");
@@ -73,7 +73,7 @@ public class JavaTestClass {
     @Test
     public void searchByField ()
     {
-        System.setProperty("webdriver.chrome.driver", "C://Users//Администратор//IdeaProjects//TestGavr//lib//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
 
         driver.get("http://flibusta.is" + "/node");
@@ -90,7 +90,7 @@ public class JavaTestClass {
     @Test
     public void extendedSearch ()
     {
-        System.setProperty("webdriver.chrome.driver", "C://Users//Администратор//IdeaProjects//TestGavr//lib//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
 
         driver.get("http://flibusta.is" + "/node");
@@ -107,7 +107,7 @@ public class JavaTestClass {
     @Test
     public void genreLink ()
     {
-        System.setProperty("webdriver.chrome.driver", "C://Users//Администратор//IdeaProjects//TestGavr//lib//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
 
         driver.get("http://flibusta.is" + "/node");
