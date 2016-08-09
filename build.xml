@@ -1,4 +1,4 @@
-<project name="TestGavr" basedir="."> <!-- name меняем на название проэкта-->
+<project name="TestGavr" basedir="."> <!-- name меняем на название проэкта  -->
         <!-- ========== Initialize Properties =================================== -->
         <!-- set global properties for build -->
 <property name="basedir" value="." />
